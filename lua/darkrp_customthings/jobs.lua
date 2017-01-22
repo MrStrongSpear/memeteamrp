@@ -244,24 +244,6 @@ TEAM_SCAMMER = DarkRP.createJob("Indian Tech Support Scammer", {
 	customCheck = function(ply) return ply:GetUserGroup() == "donator" end
 })
 
-TEAM_SCAMMER = DarkRP.createJob("Indian Tech Support Scammer", {
-	color = Color(153, 153, 255, 0),
-	model = "models/player/odessa.mdl",
-	description = [[Helloh mikerosoft tek support. (Donator Only)]],
-	weapons = {""},
-	command = "vapedealer",
-	max = 5,
-	salary = 15,
-	admin = 0,
-	vote = false,
-	hasLicense = false,
-	category = "Custom Donator Jobs",
-	sortOrder = 100,
-	customCheck = function(ply) return ply:GetUserGroup() == "donator" end
-})
-
-
-
 
 
 
