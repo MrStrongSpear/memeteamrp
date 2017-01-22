@@ -265,21 +265,21 @@ TEAM_SCAMMER = DarkRP.createJob("Indian Tech Support Scammer", {
 
 
 
----[[---------------------------------------------------------------------------
- -Define which team joining players spawn into and what team you change to if demoted
+--[[---------------------------------------------------------------------------
+ Define which team joining players spawn into and what team you change to if demoted
  ----------------------------------------------------------------------------]]
- -GAMEMODE.DefaultTeam = TEAM_CITIZEN
+ GAMEMODE.DefaultTeam = TEAM_CITIZEN
   
   
- ---[[---------------------------------------------------------------------------
- -Define which teams belong to civil protection
- -Civil protection can set warrants, make people wanted and do some other police related things
- ----------------------------------------------------------------------------]]
- -GAMEMODE.CivilProtection = {
- -	[TEAM_POLICE] = true,
- -	[TEAM_CHIEF] = true,
- -	[TEAM_MAYOR] = true,
- -}
+ --[[---------------------------------------------------------------------------
+ Define which teams belong to civil protection
+ Civil protection can set warrants, make people wanted and do some other police related things
+ ---------------------------------------------------------------------------]]
+ GAMEMODE.CivilProtection = {
+ 	[TEAM_POLICE] = true,
+ 	[TEAM_CHIEF] = true,
+ 	[TEAM_MAYOR] = true,
+ }
   
 
 --[[---------------------------------------------------------------------------
