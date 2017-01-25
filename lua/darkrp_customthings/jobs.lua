@@ -230,18 +230,23 @@ TEAM_VAPE = DarkRP.createJob("Vape Dealer", {
 
 TEAM_SCAMMER = DarkRP.createJob("Indian Tech Support Scammer", {
 	color = Color(153, 153, 255, 0),
-	model = "models/player/Group01/Male_01.mdl",
+
+
+	model = "models/player/odessa.mdl",
 	description = [[Helloh mikerosoft tek support. (Donator Only)]],
 	weapons = {""},
-	command = "techsupportscammer",
+	command = "microsoft",
+
 	max = 5,
 	salary = 15,
 	admin = 0,
 	vote = false,
 	hasLicense = false,
+
 	category = "Donator Jobs",
 	sortOrder = 100,
 	customCheck = function(ply) return ply:GetUserGroup() == "donator" end
+
 })
 
 
@@ -252,6 +257,26 @@ TEAM_SCAMMER = DarkRP.createJob("Indian Tech Support Scammer", {
 
 
 
+
+
+
+
+--[[---------------------------------------------------------------------------
+ Define which team joining players spawn into and what team you change to if demoted
+ ----------------------------------------------------------------------------]]
+ GAMEMODE.DefaultTeam = TEAM_CITIZEN
+  
+  
+ --[[---------------------------------------------------------------------------
+ Define which teams belong to civil protection
+ Civil protection can set warrants, make people wanted and do some other police related things
+ ---------------------------------------------------------------------------]]
+ GAMEMODE.CivilProtection = {
+ 	[TEAM_POLICE] = true,
+ 	[TEAM_CHIEF] = true,
+ 	[TEAM_MAYOR] = true,
+ }
+  
 
 
 --[[---------------------------------------------------------------------------

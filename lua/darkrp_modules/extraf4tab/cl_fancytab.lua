@@ -2,10 +2,10 @@
 F4 menu tab modification module.
 ---------------------------------------------------------------------------]]
 
-if true then return end -- REMOVE THIS LINE TO ENABLE THIS MODULE
+--if true then return end -- REMOVE THIS LINE TO ENABLE THIS MODULE
 
-local url = "http://wiki.darkrp.com/index.php/Main_Page"
-local tabName = "MOTD"
+local url = "http://thememeteamservers.clanwebsite.com/"
+local tabName = "Website"
 
 
 local function createF4MenuTab()
