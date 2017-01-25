@@ -101,7 +101,7 @@ TEAM_MEMELORD = DarkRP.createJob("Meme Lord", {
 	admin = 0,
 	vote = false,
 	hasLicense = false,
-	category = "Custom Donator Jobs",
+	category = "Donator Jobs",
 	sortOrder = 100,
 	customCheck = function(ply) return ply:GetUserGroup() == "donator" end
 })
@@ -117,7 +117,7 @@ TEAM_ADMIN = DarkRP.createJob("Admin On-Duty", {
 	admin = 1,
 	vote = false,
 	hasLicense = false,
-	category = "Staff Ranks",
+	category = "Staff",
 	sortOrder = 100,
 })
 
@@ -132,7 +132,7 @@ TEAM_MOD = DarkRP.createJob("Moderator On-Duty", {
 	admin = 1,
 	vote = false,
 	hasLicense = false,
-	category = "Staff Ranks",
+	category = "Staff",
 	sortOrder = 100,
 })
 
@@ -147,7 +147,7 @@ TEAM_TMOD = DarkRP.createJob("T-Mod On-Duty", {
 	admin = 1,
 	vote = false,
 	hasLicense = false,
-	category = "Staff Ranks",
+	category = "Staff",
 	sortOrder = 100,
 })
 
@@ -162,7 +162,7 @@ TEAM_REFUGEE = DarkRP.createJob("Syrian Refugee", {
 	admin = 0,
 	vote = false,
 	hasLicense = false,
-	category = "Custom Donator Jobs",
+	category = "Donator Jobs",
 	sortOrder = 100,
 	customCheck = function(ply) return ply:GetUserGroup() == "donator" end
 })
@@ -230,19 +230,33 @@ TEAM_VAPE = DarkRP.createJob("Vape Dealer", {
 
 TEAM_SCAMMER = DarkRP.createJob("Indian Tech Support Scammer", {
 	color = Color(153, 153, 255, 0),
+
+
 	model = "models/player/odessa.mdl",
 	description = [[Helloh mikerosoft tek support. (Donator Only)]],
 	weapons = {""},
 	command = "microsoft",
+
 	max = 5,
 	salary = 15,
 	admin = 0,
 	vote = false,
 	hasLicense = false,
-	category = "Custom Donator Jobs",
+
+	category = "Donator Jobs",
 	sortOrder = 100,
 	customCheck = function(ply) return ply:GetUserGroup() == "donator" end
+
 })
+
+
+
+
+
+
+
+
+
 
 
 
@@ -263,6 +277,7 @@ TEAM_SCAMMER = DarkRP.createJob("Indian Tech Support Scammer", {
  	[TEAM_MAYOR] = true,
  }
   
+
 
 --[[---------------------------------------------------------------------------
 Jobs that are hitmen (enables the hitman menu)
