@@ -119,7 +119,7 @@ DarkRP.createShipment(“Weed Shipment”, {
 	--spawn = function(shipment_ent, shipment_data) print("Spawn custom entity and place it") end, -- Function to override how the shipment spawns the weapon when used.
 })
 
-DarkRP.createShipment(“Cocain Single”, {
+DarkRP.createShipment(“Cocaine Single”, {
 	model = "durgz_cocaine", -- The model of the item that hovers above the shipment
 	entity = "durgz_cocaine", -- the entity that comes out of the shipment
 	price = 1000, -- the price of one shipment
