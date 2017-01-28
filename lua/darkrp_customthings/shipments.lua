@@ -17,7 +17,7 @@ For examples and explanation please visit this wiki page:
 
 Add shipments and guns under the following line:
 ---------------------------------------------------------------------------]]
-DarkRP.createShipment("Medical Vape Single", {
+DarkRP.createShipment("Single Medical Vape", {
 	model = "models/swamponions/vape.mdl", -- The model of the item that hovers above the shipment
 	entity = "weapon_vape_medicinal", -- the entity that comes out of the shipment
 	price = 1500, -- the price of one shipment
@@ -69,7 +69,7 @@ DarkRP.createShipment("Medical Vape Shipment", {
 
 
 
-DarkRP.createShipment(“Weed Single”, {
+DarkRP.createShipment(“Single Weed”, {
 	model = "durgz_weed", -- The model of the item that hovers above the shipment
 	entity = "durgz_weed", -- the entity that comes out of the shipment
 	price = 1000, -- the price of one shipment
@@ -119,7 +119,7 @@ DarkRP.createShipment(“Weed Shipment”, {
 	--spawn = function(shipment_ent, shipment_data) print("Spawn custom entity and place it") end, -- Function to override how the shipment spawns the weapon when used.
 })
 
-DarkRP.createShipment(“Cocaine Single”, {
+DarkRP.createShipment(“Signle Cocaine”, {
 	model = "durgz_cocaine", -- The model of the item that hovers above the shipment
 	entity = "durgz_cocaine", -- the entity that comes out of the shipment
 	price = 1000, -- the price of one shipment
@@ -144,7 +144,7 @@ DarkRP.createShipment(“Cocaine Single”, {
 	--spawn = function(shipment_ent, shipment_data) print("Spawn custom entity and place it") end, -- Function to override how the shipment spawns the weapon when used.
 })
 
-DarkRP.createShipment(“Cocain Shipment”, {
+DarkRP.createShipment(“Cocaine Shipment”, {
 	model = "durgz_cocaine", -- The model of the item that hovers above the shipment
 	entity = "durgz_cocaine", -- the entity that comes out of the shipment
 	price = 10000, -- the price of one shipment
@@ -169,7 +169,7 @@ DarkRP.createShipment(“Cocain Shipment”, {
 	--spawn = function(shipment_ent, shipment_data) print("Spawn custom entity and place it") end, -- Function to override how the shipment spawns the weapon when used.
 })
 
-DarkRP.createShipment(“Heroin Single”, {
+DarkRP.createShipment(“Single Heroin”, {
 	model = "durgz_heroin", -- The model of the item that hovers above the shipment
 	entity = "durgz_heroin", -- the entity that comes out of the shipment
 	price = 1000, -- the price of one shipment
@@ -219,7 +219,7 @@ DarkRP.createShipment(“Heroin Shipment”, {
 	--spawn = function(shipment_ent, shipment_data) print("Spawn custom entity and place it") end, -- Function to override how the shipment spawns the weapon when used.
 })
 
-DarkRP.createShipment(“LSD Single”, {
+DarkRP.createShipment(“Single LSD”, {
 	model = "durgz_lsd", -- The model of the item that hovers above the shipment
 	entity = "durgz_lsd", -- the entity that comes out of the shipment
 	price = 1000, -- the price of one shipment
@@ -269,7 +269,7 @@ DarkRP.createShipment(“LSD Shipment”, {
 	--spawn = function(shipment_ent, shipment_data) print("Spawn custom entity and place it") end, -- Function to override how the shipment spawns the weapon when used.
 })
 
-DarkRP.createShipment(“Mushrooms Single”, {
+DarkRP.createShipment(“Single Mushrooms”, {
 	model = "durgz_mushroom", -- The model of the item that hovers above the shipment
 	entity = "durgz_mushroom", -- the entity that comes out of the shipment
 	price = 1000, -- the price of one shipment
