@@ -45,7 +45,7 @@ TEAM_HITMAN = DarkRP.createJob("Hitman", {
         hasLicense = false, -- Do they have a license for weapons?
      })
 
-TEAM_DRUGDEALER = DarkRP.createJob("Drug Dealer", {
+TEAM_DRUG = DarkRP.createJob("Drug Dealer", {
 	color = Color(102, 0, 0, 0),
 	model = "models/player/group03/male_06.mdl",
 	description = [[You are a Drug Dealer. Everything you sell is illegal, don't get caught.]],
@@ -79,7 +79,7 @@ TEAM_SWAT = DarkRP.createJob("SWAT", {
 	color = Color(255, 140, 0, 0),
 	model = "models/player/swat.mdl",
 	description = [[You are a part of the SWAT team. Help the police in highly illegal and dangerous situations.]],
-	weapons = {"bb_p228_alt", "bb_m4a1_alt"},
+	weapons = {"bb_p228_alt", "bb_m4a1_alt", "arrest_stick", "unarrest_stick", "stunstick", "weaponchecker"},
 	command = "swatteam",
 	max = 12,
 	salary = 75,
@@ -230,23 +230,49 @@ TEAM_VAPE = DarkRP.createJob("Vape Dealer", {
 
 TEAM_SCAMMER = DarkRP.createJob("Indian Tech Support Scammer", {
 	color = Color(153, 153, 255, 0),
-
-
-	model = "models/player/odessa.mdl",
+	model = "models/player/Group01/Male_01.mdl",
 	description = [[Helloh mikerosoft tek support. (Donator Only)]],
 	weapons = {""},
-	command = "microsoft",
-
+	command = "techsupportscammer",
 	max = 5,
 	salary = 15,
 	admin = 0,
 	vote = false,
 	hasLicense = false,
-
 	category = "Donator Jobs",
 	sortOrder = 100,
 	customCheck = function(ply) return ply:GetUserGroup() == "donator" end
+})
 
+TEAM_DOGE = DarkRP.createJob("Doge", {
+	color = Color(255, 215, 0, 0),
+	model = "models/doge_player/doge_player.mdl",
+	description = [[Much meme, so team, wow (Donator Only)]],
+	weapons = {""},
+	command = "doge",
+	max = 2,
+	salary = 69,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Donator Jobs",
+	sortOrder = 100,
+	customCheck = function(ply) return ply:GetUserGroup() == "donator" end
+})
+
+TEAM_GUN = DarkRP.createJob("Gun Dealer", {
+	color = Color(80, 5, 255, 0),
+	model = "models/player/monk.mdl",
+	description = [[You are a gun dealer. Weapons larger than a pistol are illegal to sell.]],
+	weapons = {""},
+	command = "gundealer",
+	max = 5,
+	salary = 45,
+	admin = 0,
+	vote = true,
+	hasLicense = true,
+	category = "Citizen",
+	sortOrder = 100,
 })
 
 
@@ -257,26 +283,6 @@ TEAM_SCAMMER = DarkRP.createJob("Indian Tech Support Scammer", {
 
 
 
-
-
-
-
---[[---------------------------------------------------------------------------
- Define which team joining players spawn into and what team you change to if demoted
- ----------------------------------------------------------------------------]]
- GAMEMODE.DefaultTeam = TEAM_CITIZEN
-  
-  
- --[[---------------------------------------------------------------------------
- Define which teams belong to civil protection
- Civil protection can set warrants, make people wanted and do some other police related things
- ---------------------------------------------------------------------------]]
- GAMEMODE.CivilProtection = {
- 	[TEAM_POLICE] = true,
- 	[TEAM_CHIEF] = true,
- 	[TEAM_MAYOR] = true,
- }
-  
 
 
 --[[---------------------------------------------------------------------------
